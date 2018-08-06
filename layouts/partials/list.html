@@ -1,5 +1,11 @@
 <section class="container list">
   <h1 class="title">{{ .Title }}</h1>
+  
+  <p>
+    <a href="{{ .Site.BaseURL }}categories">categories</a>
+    <a href="{{ .Site.BaseURL }}tags">tags</a>
+  </p>
+
   <ul>
     {{ range .Paginator.Pages }}
     <li>
